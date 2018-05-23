@@ -762,6 +762,25 @@ blockquote {
     background: $white;
     min-height: 300px;
 
+    &:first-child {
+      order: 1;
+    }
+    &:nth-child(2) {
+      order: 2;
+    }
+    &:last-child {
+      order: 3;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      &:nth-child(2) {
+        order: 3;
+      }
+      &:last-child {
+        order: 2;
+      }
+    }
+
     .price-title {
       padding: 20px 10px;
       font-weight: 700;
@@ -790,7 +809,7 @@ blockquote {
 
     a {
       display: block;
-      padding: 25px 10px;
+      padding: 20px 10px;
       background: $brand-primary;
       color: $white;
       text-align: center;
@@ -863,6 +882,30 @@ blockquote {
       color: $brand-primary;
     }
   }
+}
+
+.user-form {
+  .form-control {
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+    height: 190px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 15px 10px;
+
+    &:hover {
+      background: transparent;
+      border-color: $gray-dark;
+      color: $gray-dark;
+    }
+  }
+
 }
 
 .map {

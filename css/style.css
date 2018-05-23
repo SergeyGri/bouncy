@@ -6327,6 +6327,17 @@ blockquote {
     box-shadow: 1px 1px 1px #e7e7e7;
     background: #fff;
     min-height: 300px; }
+    .price-flex-container .flex-item:first-child {
+      order: 1; }
+    .price-flex-container .flex-item:nth-child(2) {
+      order: 2; }
+    .price-flex-container .flex-item:last-child {
+      order: 3; }
+    @media (max-width: 991px) {
+      .price-flex-container .flex-item:nth-child(2) {
+        order: 3; }
+      .price-flex-container .flex-item:last-child {
+        order: 2; } }
     .price-flex-container .flex-item .price-title {
       padding: 20px 10px;
       font-weight: 700; }
@@ -6346,7 +6357,7 @@ blockquote {
         margin-bottom: 10px; }
     .price-flex-container .flex-item a {
       display: block;
-      padding: 25px 10px;
+      padding: 20px 10px;
       background: #19bd9a;
       color: #fff;
       text-align: center; }
@@ -6405,6 +6416,21 @@ blockquote {
     font-weight: normal; }
   .section-contact .thumbnail a:hover {
     color: #19bd9a; }
+
+.user-form .form-control {
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 0; }
+.user-form textarea {
+  resize: none;
+  height: 190px; }
+.user-form .btn-primary {
+  width: 100%;
+  padding: 15px 10px; }
+  .user-form .btn-primary:hover {
+    background: transparent;
+    border-color: #81868e;
+    color: #81868e; }
 
 .map iframe {
   height: 496px;
